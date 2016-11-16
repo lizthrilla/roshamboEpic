@@ -6,6 +6,9 @@ const incrementPlayerCount = () => {
   const playerTextScore = $('.scores .player').textContent
   const playerScore = parseInt(playerTextScore) + 1
   $('.scores .player').textContent = playerScore
+  if (playerScore === 2) {
+    gameOver(true)
+  }
 }
 
 const incrementComputerCount = () => {
@@ -13,6 +16,9 @@ const incrementComputerCount = () => {
   const computerTextScore = $('.scores .computer').textContent
   const computerScore = parseInt(computerTextScore) + 1
   $('.scores .computer').textContent = computerScore
+  if (computerScore === 2){
+    gameOver(false)
+  }
 }
 const handleButtonClick = (event) => {
   const player = event.target.className
