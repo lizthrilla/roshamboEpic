@@ -1,7 +1,7 @@
 what i need to do:
 define winning:
  -player chooses rock vs computer chooses
- 
+
 I first round
 1. did player win?
   a. yes
@@ -42,3 +42,4 @@ V Fifth Round
     ii. computer score + 1
   c. drawn
     ii. No change
+VI game over
