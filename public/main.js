@@ -7,6 +7,12 @@ const handleButtonClick = (event) => {
   $('figure.player img').src = `/images/${player}.svg`
   $('figure.computer img').src = `/images/${computer}.svg`
 
+  let out = ''
+  if (player > computer) out += 'Win'
+  if (player < computer) out += 'Lose'
+  if (player === computer) out += 'Draw'
+  console.log(out)
+
   // HINT: Check for win, lose or draw, then call `gameOver()` eventually.
 }
 
