@@ -27,13 +27,19 @@ const incrementPlayerBout = () => {
   const playerTextBout = $('.bout .player').textContent
   const playerBout = parseInt(playerTextBout) + 1
   $('.bout .player').textContent = playerBout
+  if (playerBout === 2) {
+    matchOver(true)
   }
+}
 
   const incrementCompBout = () => {
     console.log('Computer Wins Bout')
     const compTextBout = $('.bout .computer').textContent
     const compBout = parseInt(compTextBout) + 1
     $('.bout .computer').textContent = compBout
+    if (compBout === 2){
+      matchOver(false)
+    }
 }
 
 
@@ -87,16 +93,36 @@ const gameOver = (playerDidWin) => {
   $('body').className = 'modal'
 }
 
+const matchOver = (playerDidWin) => {
+  if (playerDidWin) {
+    $('.dialog h3').textContent = 'You won the match!'
+      console.log ('Player won the Match!')
+
+  } else {
+    $('.dialog h3').textContent = 'You lost the match!'
+    console.log ('Computer won the Match!')
+  }
+  $('body').className = 'modal'
+  resetMatch()
+}
+
 
 const resetGame = () => {
-  // TODO: Probably need to do more to reset the game here...
+
   $('.engage .player').textContent = 0
   $('.engage .computer').textContent = 0
   $('figure.player img').src = '/images/unknown.svg'
   $('figure.computer img').src = '/images/unknown.svg'
   $('body').className = ''
 }
+const resetMatch = () => {
 
+  $('.bout .player').textContent = 0
+  $('.bout .computer').textContent = 0
+  $('figure.player img').src = '/images/unknown.svg'
+  $('figure.computer img').src = '/images/unknown.svg'
+  $('body').className = ''
+}
 
 const main = () => {
   const buttons = $$('.player-input button')
