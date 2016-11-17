@@ -3,12 +3,12 @@ const $$ = s => document.querySelectorAll(s)
 
 const incrementPlayerCount = () => {
   console.log('Player Wins')
-  const playerTextScore = $('.scores .player').textContent
+  const playerTextScore = $('.engage .player').textContent
   const playerScore = parseInt(playerTextScore) + 1
-  $('.scores .player').textContent = playerScore
+  $('.engage .player').textContent = playerScore
   if (playerScore === 2) {
-    gameOver(true)
-  }
+      gameOver(true)
+    }
 }
 
 const incrementComputerCount = () => {
@@ -16,10 +16,27 @@ const incrementComputerCount = () => {
   const computerTextScore = $('.scores .computer').textContent
   const computerScore = parseInt(computerTextScore) + 1
   $('.scores .computer').textContent = computerScore
-  if (computerScore === 2){
+  if (computerScore === 2) {
     gameOver(false)
   }
 }
+
+//bout scores
+const incrementPlayerBout = () => {
+  console.log('Player Wins Bout')
+  const playerTextBout = $('.bout .player').textContent
+  const playerBout = parseInt(playerTextBout) + 1
+  $('.bout .player').textContent = playerBout
+  }
+
+  const incrementCompBout = () => {
+    console.log('Computer Wins Bout')
+    const compTextBout = $('.bout .computer').textContent
+    const compBout = parseInt(compTextBout) + 1
+    $('.bout .computer').textContent = compBout
+}
+
+
 //button clicking fun
 const handleButtonClick = (event) => {
   const player = event.target.className
@@ -60,9 +77,12 @@ const gameOver = (playerDidWin) => {
   if (playerDidWin) {
     $('.dialog h3').textContent = 'You won the bout!'
       console.log('Player won 2 out of 3')
+    incrementPlayerBout()
+
   } else {
     $('.dialog h3').textContent = 'You lost the bout!'
     console.log('Computer won 2 out of 3')
+    incrementCompBout()
   }
   $('body').className = 'modal'
 }
@@ -70,8 +90,8 @@ const gameOver = (playerDidWin) => {
 
 const resetGame = () => {
   // TODO: Probably need to do more to reset the game here...
-  $('.scores .player').textContent = 0
-  $('.scores .computer').textContent = 0
+  $('.engage .player').textContent = 0
+  $('.engage .computer').textContent = 0
   $('figure.player img').src = '/images/unknown.svg'
   $('figure.computer img').src = '/images/unknown.svg'
   $('body').className = ''

@@ -85,7 +85,12 @@ figure.draw img {
   margin: 1px;
   padding: 1px;
 }
-.engagescores {
+.engage {
+  display: flex;
+  justify-content: center;
+  margin: 1px;
+}
+.bout {
   display: flex;
   justify-content: center;
   margin: 1px;
