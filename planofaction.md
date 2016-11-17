@@ -1,3 +1,38 @@
+## adventure mode:
+**goal: track the result of multiple games (matches), after the match the winner is shown and the player is given a leader board and prompt to play again**
+##### throw = engagement; 2:3 engagements = bout; 2:3 bouts = match
+
+I want to create a match function where if (computer || player === 2 bouts) {matchOver()}
+
+1. create way to track engagements (i already have it)
+
+2. create way to track bouts (playerBout and computerBout)
+3. **goes into reset?**create boutOver() based off gameOver()
+  a. will need to change the script a bit to say you lost the bout
+4. if (computerBouts || playerBouts === 2){
+boutOver()
+}
+5. create leader board in html and css
+6. bout change score like game score
+7. create matchOver() based off gameOver()
+7. if('computerBout' || playerBout === 2){
+matchOver()
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## explorer mode
 what i need to do:
 define winning:
  -player chooses rock vs computer chooses
