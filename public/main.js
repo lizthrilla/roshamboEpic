@@ -53,8 +53,10 @@ const getComputerMove = () => {
 const boutOver = (playerDidWin) => {
   if (playerDidWin) {
     $('.dialog h3').textContent = 'You won the bout!'
+      console.log('Player won 2 out of 3')
   } else {
     $('.dialog h3').textContent = 'You lost the bout!'
+    console.log('Computer won 2 out of 3')
   }
   $('body').className = 'modal'
 }
