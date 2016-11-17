@@ -7,7 +7,7 @@ const incrementPlayerCount = () => {
   const playerScore = parseInt(playerTextScore) + 1
   $('.scores .player').textContent = playerScore
   if (playerScore === 2) {
-    gameOver(true)
+    boutOver(true)
   }
 }
 
@@ -17,7 +17,7 @@ const incrementComputerCount = () => {
   const computerScore = parseInt(computerTextScore) + 1
   $('.scores .computer').textContent = computerScore
   if (computerScore === 2){
-    gameOver(false)
+    boutOver(false)
   }
 }
 //button clicking fun
@@ -50,14 +50,16 @@ const getComputerMove = () => {
 }
 
 // HINT: Try calling `gameOver(true)` in the console.
-const gameOver = (playerDidWin) => {
+const boutOver = (playerDidWin) => {
   if (playerDidWin) {
-    $('.dialog h3').textContent = 'You won!'
+    $('.dialog h3').textContent = 'You won the bout!'
   } else {
-    $('.dialog h3').textContent = 'You lost!'
+    $('.dialog h3').textContent = 'You lost the bout!'
   }
   $('body').className = 'modal'
 }
+
+
 
 const resetGame = () => {
   // TODO: Probably need to do more to reset the game here...
