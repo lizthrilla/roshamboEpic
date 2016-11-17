@@ -20,6 +20,7 @@ const incrementComputerCount = () => {
     gameOver(false)
   }
 }
+//button clicking fun
 const handleButtonClick = (event) => {
   const player = event.target.className
   const computer = getComputerMove()
