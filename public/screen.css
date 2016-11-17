@@ -68,23 +68,51 @@ figure.draw img {
 }
 
 .scores {
-  font-size: 5vw;
+  font-size: 3vw;
   display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
 }
-
+.scores h4 {
+  text-align: center;
+  margin-bottom: 1px;
+  margin-top: 1px;
+}
 .scores span {
   font-size: 5vw;
   display: block;
+  margin: 1px;
+  padding: 1px;
 }
-
+.engagescores {
+  display: flex;
+  justify-content: center;
+  margin: 1px;
+}
 .scores span.player {
   text-align: right;
 }
-
 .player-input {
   padding-left: 0;
   list-style: none;
   display: flex;
+}
+.scores {
+  font-size: 5vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  margin: 1px;
+  padding: 1px;
+}
+.bout h4 {
+  font-size: 18px;
+}
+.boutscores {
+  display: flex;
+  justify-content: center;
 }
 
 .player-input li {
