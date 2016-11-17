@@ -5,6 +5,9 @@
 I want to create a match function where if (computer || player === 2 bouts) {matchOver()}
 
 1. create way to track engagements (i already have it)
+--changed gameOver to boutOver and said that you lost the bout.  **I need to create a bout tracker/leaderboard**
+
+
 
 2. create way to track bouts (playerBout and computerBout)
 3. **goes into reset?**create boutOver() based off gameOver()
