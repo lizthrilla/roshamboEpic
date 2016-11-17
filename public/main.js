@@ -7,7 +7,7 @@ const incrementPlayerCount = () => {
   const playerScore = parseInt(playerTextScore) + 1
   $('.scores .player').textContent = playerScore
   if (playerScore === 2) {
-    boutOver(true)
+    gameOver(true)
   }
 }
 
@@ -17,7 +17,7 @@ const incrementComputerCount = () => {
   const computerScore = parseInt(computerTextScore) + 1
   $('.scores .computer').textContent = computerScore
   if (computerScore === 2){
-    boutOver(false)
+    gameOver(false)
   }
 }
 //button clicking fun
@@ -29,16 +29,22 @@ const handleButtonClick = (event) => {
 
 
   if (player === 'rock' && computer === 'scissors' || player === 'scissors' && computer === 'paper' || player === 'paper' && computer === 'rock'){
+    $('figure.player').className = 'player win'
+    $('figure.computer').className = 'computer lose'
     incrementPlayerCount()
   }
 
 
   // computer win
   if (player === 'scissors' && computer === 'rock' || player === 'rock' && computer === 'paper' || player === 'paper' && computer === 'scissors') {
+    $('figure.player').className = 'player lose'
+    $('figure.computer').className = 'computer win'
     incrementComputerCount()
   }
   //draw
   if (player === computer) {
+    $('figure.player').className = 'player draw'
+    $('figure.computer').className = 'computer draw'
     console.log('Draw')
   }
 }
@@ -50,7 +56,7 @@ const getComputerMove = () => {
 }
 
 // HINT: Try calling `gameOver(true)` in the console.
-const boutOver = (playerDidWin) => {
+const gameOver = (playerDidWin) => {
   if (playerDidWin) {
     $('.dialog h3').textContent = 'You won the bout!'
       console.log('Player won 2 out of 3')
@@ -60,7 +66,6 @@ const boutOver = (playerDidWin) => {
   }
   $('body').className = 'modal'
 }
-
 
 
 const resetGame = () => {
