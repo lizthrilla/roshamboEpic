@@ -71,10 +71,9 @@ figure.draw img {
 }
 
 .scores {
-  font-size: 5vw;
+  font-size: 30px;
   display: flex;
   justify-content: center;
-  align-content: center;
   flex-direction: column;
 }
 .scores h4 {
@@ -91,7 +90,8 @@ figure.draw img {
 .engage {
   display: flex;
   justify-content: center;
-  margin: 1px;
+  margin-bottom: 1px;
+  padding-bottom: 1px;
 }
 .bout {
   display: flex;
@@ -122,7 +122,9 @@ figure.draw img {
   display: flex;
   justify-content: center;
 }
-
+.instructions {
+  margin-top: 3em;
+}
 .player-input li {
   margin: 20px;
 }
