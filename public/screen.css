@@ -6,7 +6,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Eczar', serif;
+  font-family: 'Ruda', sans-serif;
   height: 100%;
   background-color: hsl(200, 33%, 90%);
   color: hsl(200, 5%, 25%);
@@ -21,7 +21,10 @@ main {
   transition: filter 400ms ease-out;
 }
 h1 {
-  margin: 2em;
+  margin: 1em;
+  padding-bottom: 2em;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 50px;
 }
 
 section {
@@ -75,6 +78,7 @@ figure.draw img {
   justify-content: center;
   flex-direction: column;
   padding: -3px;
+    font-family: 'Architects Daughter', cursive;
 }
 .scores h4 {
   text-align: center;
@@ -86,7 +90,10 @@ figure.draw img {
   display: block;
   margin: 1px;
   padding: 1px;
+  font-family: 'Architects Daughter', cursive;
 }
+
+
 .engage {
   display: flex;
   justify-content: center;
