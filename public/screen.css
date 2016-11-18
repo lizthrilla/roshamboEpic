@@ -30,6 +30,8 @@ h1 {
 section {
   display: flex;
   align-items: center;
+  margin-bottom: 3em;
+  padding-bottom: 1em;
 }
 
 figure {
@@ -128,8 +130,6 @@ figure.draw img {
   justify-content: center;
 }
 .instructions {
-  margin-top:2em;
-  padding-top: 1em;
   font-size: 3vw;
 }
 .player-input li {
