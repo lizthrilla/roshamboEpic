@@ -92,8 +92,6 @@ figure.draw img {
   padding: 1px;
   font-family: 'Architects Daughter', cursive;
 }
-
-
 .engage {
   display: flex;
   justify-content: center;
@@ -130,7 +128,8 @@ figure.draw img {
   justify-content: center;
 }
 .instructions {
-  margin-top: 3em;
+  margin-top:2em;
+  padding-top: 1em;
   font-size: 3vw;
 }
 .player-input li {
