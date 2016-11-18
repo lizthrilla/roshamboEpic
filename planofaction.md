@@ -1,3 +1,10 @@
+# Epic Mode
+1. make const for remembering (memory)
+2. when player wins, record memory
+3. when computer wins, record memory
+4. getComputerMove
+
+
 ## adventure mode:
 **goal: track the result of multiple games (matches), after the match the winner is shown and the player is given a leader board and prompt to play again**
 ##### throw = engagement; 2:3 engagements = bout; 2:3 bouts = match
