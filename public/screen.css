@@ -69,12 +69,12 @@ figure.draw img {
   animation: 1s ease 1 alternate draw;
   filter: drop-shadow(0 0 5px hsl(0, 0%, 50%));
 }
-
 .scores {
   font-size: 30px;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  padding: -3px;
 }
 .scores h4 {
   text-align: center;
@@ -90,8 +90,7 @@ figure.draw img {
 .engage {
   display: flex;
   justify-content: center;
-  margin-bottom: 1px;
-  padding-bottom: 1px;
+  margin-bottom: -30px;
 }
 .bout {
   display: flex;
@@ -99,8 +98,9 @@ figure.draw img {
   margin-bottom: 1em;
 }
 .scores span.player {
-  text-align: right;
+  text-align: center;
 }
+
 .player-input {
   padding-left: 0;
   list-style: none;
@@ -124,6 +124,7 @@ figure.draw img {
 }
 .instructions {
   margin-top: 3em;
+  font-size: 3vw;
 }
 .player-input li {
   margin: 20px;
