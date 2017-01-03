@@ -1,5 +1,10 @@
 # Ro! Sham! Bo!
 
+Below is the original assignment.  This is the final and 'Epic' version of the app.  I also have [Explorer] (https://github.com/lizthrilla/roshambo) and [Adventure] (https://github.com/lizthrilla/roshamboAdventure) modes saved.
+
+![image of Roshambo Epic]
+(https://raw.githubusercontent.com/lizthrilla/roshamboEpic/master/Ro__Sham__Bo_.png)
+
 Every Thursday, Jason, Gavin, Mark, Holly, Dania, and Toni go for lunch. In order to determine who pays, a bout of Roshambo
 (aka rock-paper-scissors) is played. The problem is, programmers are lazy. Jason and Gavin can't
 possibly be bothered to throw their hands manually. We need you to automate this for us.
